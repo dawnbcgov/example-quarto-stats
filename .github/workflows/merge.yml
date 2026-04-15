@@ -1,0 +1,43 @@
+name: Merge to main
+
+on:
+  schedule:
+    - cron: "25 6 * * *" # 6:25 am UTC every day
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+# Allow this job to clone the repo and create a page deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Uses quarto instructions and actions: https://quarto.org/docs/publishing/github-pages.html
+jobs:
+  build-deploy:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    defaults:
+      run:
+        working-directory: ./frontend
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+      - name: Render Quarto Project
+        shell: bash
+        run: |
+          quarto render . --output-dir ./build
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: frontend/build
+          branch: gh-pages
+          clean-exclude: pr-preview/
+          single-commit: true # Drop unnecessary commit history from gh-pages
+          force: true # Set to false if we start losing PR deployment previews
