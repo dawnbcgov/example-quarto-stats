@@ -62,10 +62,10 @@ contributes:
       navbar:
         logo: /_extensions/bcds/assets/BCID_H_rgb_pos.svg
         right:
-          - text: Issued warnings
-            href: index.qmd
           - text: Historical warnings
             href: warnings.qmd
+          - text: Statistics
+            href: statistics.qmd
       sidebar:
         style: "docked"
         alignment: left
