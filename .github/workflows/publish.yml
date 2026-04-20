@@ -11,9 +11,6 @@ jobs:
     runs-on: ubuntu-24.04
     permissions:
       contents: write
-    defaults:
-      run:
-        working-directory: ./frontend
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -25,5 +22,6 @@ jobs:
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
+          working-directory: ./frontend
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
