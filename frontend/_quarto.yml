@@ -1,5 +1,7 @@
 project:
   type: bcds
+  resources:
+    - "*.html"
   preview:
     port: 3000
     browser: false
