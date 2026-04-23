@@ -1,5 +1,5 @@
 ---
-title: "Example stats for air quality warnings"
+title: "Example stats"
 toc: false
 ---
 
