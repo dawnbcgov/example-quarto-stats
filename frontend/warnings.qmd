@@ -8,7 +8,8 @@ listing:
     ice: "Status"
     location: "Location"
   contents: 
-    - "warnings/**.yml"
+    - "warnings/**/*.*md"
+    - "warnings/**.yml"    
   sort: "date desc"
 ---
 
