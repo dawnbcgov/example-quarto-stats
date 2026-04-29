@@ -83,8 +83,9 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-location','listing-title','listing-ice','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-author","listing-authors","listing-date","listing-ice","listing-location","listing-params","listing-smokeDuration","listing-title","listing-toc-title","listing-type"],
+      page: 30,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -239,12 +240,6 @@ window.Quarto = {
       <option value="listing-date-sort" data-direction="desc">
         Date - Newest
       </option>
-      <option value="listing-ice" data-direction="asc">
-        Status
-      </option>
-      <option value="listing-location" data-direction="asc">
-        Location
-      </option>
       <option value="listing-title-sort" data-direction="asc">
         Warning Type
       </option>
@@ -260,7 +255,7 @@ window.Quarto = {
 <tr>
 
 <th>
-<a class="sort" data-sort="listing-location" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Location</a>
+Location
 </th>
 
 <th>
@@ -268,7 +263,7 @@ window.Quarto = {
 </th>
 
 <th>
-<a class="sort" data-sort="listing-ice" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Status</a>
+Status
 </th>
 
 <th>
@@ -279,7 +274,839 @@ window.Quarto = {
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-date-sort="1748908800000" data-listing-title-sort="Air Quality Warning - Wildfire Smoke">
+<tr data-index="0" data-listing-date-sort="1775865600000" data-listing-file-modified-sort="1777489711585" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="247" data-listing-title-sort="Air quality warning ended for Williams Lake" data-listing-filename-sort="2026-04-11_Williams_Lake_end_pm10.md">
+<td>
+<span class="listing-location">Williams Lake</span>
+</td>
+<td>
+<a href="./warnings/2026-04-11_Williams_Lake_end_pm10.html" class="title listing-title">Air quality warning ended for Williams Lake</a>
+</td>
+<td>
+<span class="listing-ice">End</span>
+</td>
+<td>
+<span class="listing-date">Apr 11, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="1" data-listing-date-sort="1775779200000" data-listing-file-modified-sort="1777489711585" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1103" data-listing-title-sort="Air quality warning in effect for Williams Lake" data-listing-filename-sort="2026-04-10_Williams_Lake_issue_pm10.md">
+<td>
+<span class="listing-location">Williams Lake</span>
+</td>
+<td>
+<a href="./warnings/2026-04-10_Williams_Lake_issue_pm10.html" class="title listing-title">Air quality warning in effect for Williams Lake</a>
+</td>
+<td>
+<span class="listing-ice">Issue</span>
+</td>
+<td>
+<span class="listing-date">Apr 10, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="2" data-listing-date-sort="1775088000000" data-listing-file-modified-sort="1777489711585" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="261" data-listing-title-sort="Air quality warning ended for Golden" data-listing-filename-sort="2026-04-02_Golden_end_pm10.md">
+<td>
+<span class="listing-location">Golden</span>
+</td>
+<td>
+<a href="./warnings/2026-04-02_Golden_end_pm10.html" class="title listing-title">Air quality warning ended for Golden</a>
+</td>
+<td>
+<span class="listing-ice">End</span>
+</td>
+<td>
+<span class="listing-date">Apr 2, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="3" data-listing-date-sort="1774742400000" data-listing-file-modified-sort="1777489711585" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="259" data-listing-title-sort="Air quality warning ended for Golden" data-listing-filename-sort="2026-03-29_Golden_end_pm10.md">
+<td>
+<span class="listing-location">Golden</span>
+</td>
+<td>
+<a href="./warnings/2026-03-29_Golden_end_pm10.html" class="title listing-title">Air quality warning ended for Golden</a>
+</td>
+<td>
+<span class="listing-ice">End</span>
+</td>
+<td>
+<span class="listing-date">Mar 29, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="4" data-listing-date-sort="1774656000000" data-listing-file-modified-sort="1777489711585" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1121" data-listing-title-sort="Air quality warning in effect for Golden" data-listing-filename-sort="2026-03-28_Golden_continue_pm10.md">
+<td>
+<span class="listing-location">Golden</span>
+</td>
+<td>
+<a href="./warnings/2026-03-28_Golden_continue_pm10.html" class="title listing-title">Air quality warning in effect for Golden</a>
+</td>
+<td>
+<span class="listing-ice">Continue</span>
+</td>
+<td>
+<span class="listing-date">Mar 28, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="5" data-listing-date-sort="1774569600000" data-listing-file-modified-sort="1777489711585" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1115" data-listing-title-sort="Air quality warning in effect for Golden" data-listing-filename-sort="2026-03-27_Golden_issue_pm10.md">
+<td>
+<span class="listing-location">Golden</span>
+</td>
+<td>
+<a href="./warnings/2026-03-27_Golden_issue_pm10.html" class="title listing-title">Air quality warning in effect for Golden</a>
+</td>
+<td>
+<span class="listing-ice">Issue</span>
+</td>
+<td>
+<span class="listing-date">Mar 27, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="6" data-listing-date-sort="1774396800000" data-listing-file-modified-sort="1777489711585" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="260" data-listing-title-sort="Air quality warning ended for Golden" data-listing-filename-sort="2026-03-25_Golden_end_pm10.md">
+<td>
+<span class="listing-location">Golden</span>
+</td>
+<td>
+<a href="./warnings/2026-03-25_Golden_end_pm10.html" class="title listing-title">Air quality warning ended for Golden</a>
+</td>
+<td>
+<span class="listing-ice">End</span>
+</td>
+<td>
+<span class="listing-date">Mar 25, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="7" data-listing-date-sort="1774310400000" data-listing-file-modified-sort="1777489711585" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1121" data-listing-title-sort="Air quality warning in effect for Golden" data-listing-filename-sort="2026-03-24_Golden_continue_pm10.md">
+<td>
+<span class="listing-location">Golden</span>
+</td>
+<td>
+<a href="./warnings/2026-03-24_Golden_continue_pm10.html" class="title listing-title">Air quality warning in effect for Golden</a>
+</td>
+<td>
+<span class="listing-ice">Continue</span>
+</td>
+<td>
+<span class="listing-date">Mar 24, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="8" data-listing-date-sort="1774224000000" data-listing-file-modified-sort="1777489711585" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1114" data-listing-title-sort="Air quality warning in effect for Golden" data-listing-filename-sort="2026-03-23_Golden_issue_pm10.md">
+<td>
+<span class="listing-location">Golden</span>
+</td>
+<td>
+<a href="./warnings/2026-03-23_Golden_issue_pm10.html" class="title listing-title">Air quality warning in effect for Golden</a>
+</td>
+<td>
+<span class="listing-ice">Issue</span>
+</td>
+<td>
+<span class="listing-date">Mar 23, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="9" data-listing-date-sort="1773446400000" data-listing-file-modified-sort="1777489711585" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="424" data-listing-title-sort="Air quality warning ended for Smithers" data-listing-filename-sort="2026-03-14_Smithers_end_pm10.md">
+<td>
+<span class="listing-location">Smithers</span>
+</td>
+<td>
+<a href="./warnings/2026-03-14_Smithers_end_pm10.html" class="title listing-title">Air quality warning ended for Smithers</a>
+</td>
+<td>
+<span class="listing-ice">End</span>
+</td>
+<td>
+<span class="listing-date">Mar 14, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="10" data-listing-date-sort="1773360000000" data-listing-file-modified-sort="1777489711585" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1381" data-listing-title-sort="Air quality warning in effect for Smithers" data-listing-filename-sort="2026-03-13_Smithers_issue_pm10.md">
+<td>
+<span class="listing-location">Smithers</span>
+</td>
+<td>
+<a href="./warnings/2026-03-13_Smithers_issue_pm10.html" class="title listing-title">Air quality warning in effect for Smithers</a>
+</td>
+<td>
+<span class="listing-ice">Issue</span>
+</td>
+<td>
+<span class="listing-date">Mar 13, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="11" data-listing-date-sort="1772841600000" data-listing-file-modified-sort="1777489711585" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="276" data-listing-title-sort="Air quality warning ended for Golden" data-listing-filename-sort="2026-03-07_Golden_end_pm10.md">
+<td>
+<span class="listing-location">Golden</span>
+</td>
+<td>
+<a href="./warnings/2026-03-07_Golden_end_pm10.html" class="title listing-title">Air quality warning ended for Golden</a>
+</td>
+<td>
+<span class="listing-ice">End</span>
+</td>
+<td>
+<span class="listing-date">Mar 7, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="12" data-listing-date-sort="1772755200000" data-listing-file-modified-sort="1777489711584" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1116" data-listing-title-sort="Air quality warning in effect for Golden" data-listing-filename-sort="2026-03-06_Golden_issue_pm10.md">
+<td>
+<span class="listing-location">Golden</span>
+</td>
+<td>
+<a href="./warnings/2026-03-06_Golden_issue_pm10.html" class="title listing-title">Air quality warning in effect for Golden</a>
+</td>
+<td>
+<span class="listing-ice">Issue</span>
+</td>
+<td>
+<span class="listing-date">Mar 6, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="13" data-listing-date-sort="1772582400000" data-listing-file-modified-sort="1777489711584" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="260" data-listing-title-sort="Air quality warning ended for Golden" data-listing-filename-sort="2026-03-04_Golden_end_pm10.md">
+<td>
+<span class="listing-location">Golden</span>
+</td>
+<td>
+<a href="./warnings/2026-03-04_Golden_end_pm10.html" class="title listing-title">Air quality warning ended for Golden</a>
+</td>
+<td>
+<span class="listing-ice">End</span>
+</td>
+<td>
+<span class="listing-date">Mar 4, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="14" data-listing-date-sort="1772582400000" data-listing-file-modified-sort="1777489711584" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="237" data-listing-title-sort="Air quality warning ended for Vernon" data-listing-filename-sort="2026-03-04_Vernon_end_pm10.md">
+<td>
+<span class="listing-location">Vernon</span>
+</td>
+<td>
+<a href="./warnings/2026-03-04_Vernon_end_pm10.html" class="title listing-title">Air quality warning ended for Vernon</a>
+</td>
+<td>
+<span class="listing-ice">End</span>
+</td>
+<td>
+<span class="listing-date">Mar 4, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="15" data-listing-date-sort="1772496000000" data-listing-file-modified-sort="1777489711584" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1122" data-listing-title-sort="Air quality warning in effect for Golden" data-listing-filename-sort="2026-03-03_Golden_continue_pm10.md">
+<td>
+<span class="listing-location">Golden</span>
+</td>
+<td>
+<a href="./warnings/2026-03-03_Golden_continue_pm10.html" class="title listing-title">Air quality warning in effect for Golden</a>
+</td>
+<td>
+<span class="listing-ice">Continue</span>
+</td>
+<td>
+<span class="listing-date">Mar 3, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="16" data-listing-date-sort="1772496000000" data-listing-file-modified-sort="1777489711584" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1093" data-listing-title-sort="Air quality warning in effect for Vernon" data-listing-filename-sort="2026-03-03_Vernon_issue_pm10.md">
+<td>
+<span class="listing-location">Vernon</span>
+</td>
+<td>
+<a href="./warnings/2026-03-03_Vernon_issue_pm10.html" class="title listing-title">Air quality warning in effect for Vernon</a>
+</td>
+<td>
+<span class="listing-ice">Issue</span>
+</td>
+<td>
+<span class="listing-date">Mar 3, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="17" data-listing-date-sort="1772409600000" data-listing-file-modified-sort="1777489711584" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1115" data-listing-title-sort="Air quality warning in effect for Golden" data-listing-filename-sort="2026-03-02_Golden_issue_pm10.md">
+<td>
+<span class="listing-location">Golden</span>
+</td>
+<td>
+<a href="./warnings/2026-03-02_Golden_issue_pm10.html" class="title listing-title">Air quality warning in effect for Golden</a>
+</td>
+<td>
+<span class="listing-ice">Issue</span>
+</td>
+<td>
+<span class="listing-date">Mar 2, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="18" data-listing-date-sort="1771027200000" data-listing-file-modified-sort="1777489711584" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="258" data-listing-title-sort="Air quality warning ended for Golden" data-listing-filename-sort="2026-02-14_Golden_end_pm10.md">
+<td>
+<span class="listing-location">Golden</span>
+</td>
+<td>
+<a href="./warnings/2026-02-14_Golden_end_pm10.html" class="title listing-title">Air quality warning ended for Golden</a>
+</td>
+<td>
+<span class="listing-ice">End</span>
+</td>
+<td>
+<span class="listing-date">Feb 14, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="19" data-listing-date-sort="1770940800000" data-listing-file-modified-sort="1777489711584" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1119" data-listing-title-sort="Air quality warning in effect for Golden" data-listing-filename-sort="2026-02-13_Golden_continue_pm10.md">
+<td>
+<span class="listing-location">Golden</span>
+</td>
+<td>
+<a href="./warnings/2026-02-13_Golden_continue_pm10.html" class="title listing-title">Air quality warning in effect for Golden</a>
+</td>
+<td>
+<span class="listing-ice">Continue</span>
+</td>
+<td>
+<span class="listing-date">Feb 13, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="20" data-listing-date-sort="1770854400000" data-listing-file-modified-sort="1777489711584" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1113" data-listing-title-sort="Air quality warning in effect for Golden" data-listing-filename-sort="2026-02-12_Golden_issue_pm10.md">
+<td>
+<span class="listing-location">Golden</span>
+</td>
+<td>
+<a href="./warnings/2026-02-12_Golden_issue_pm10.html" class="title listing-title">Air quality warning in effect for Golden</a>
+</td>
+<td>
+<span class="listing-ice">Issue</span>
+</td>
+<td>
+<span class="listing-date">Feb 12, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="21" data-listing-date-sort="1769558400000" data-listing-file-modified-sort="1777489711584" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="268" data-listing-title-sort="Air quality warning ended for Vanderhoof" data-listing-filename-sort="2026-01-28_Vanderhoof_end_pm25.md">
+<td>
+<span class="listing-location">Vanderhoof</span>
+</td>
+<td>
+<a href="./warnings/2026-01-28_Vanderhoof_end_pm25.html" class="title listing-title">Air quality warning ended for Vanderhoof</a>
+</td>
+<td>
+<span class="listing-ice">End</span>
+</td>
+<td>
+<span class="listing-date">Jan 28, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="22" data-listing-date-sort="1769472000000" data-listing-file-modified-sort="1777489711584" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1141" data-listing-title-sort="Air quality warning in effect for Vanderhoof" data-listing-filename-sort="2026-01-27_Vanderhoof_continue_pm25.md">
+<td>
+<span class="listing-location">Vanderhoof</span>
+</td>
+<td>
+<a href="./warnings/2026-01-27_Vanderhoof_continue_pm25.html" class="title listing-title">Air quality warning in effect for Vanderhoof</a>
+</td>
+<td>
+<span class="listing-ice">Continue</span>
+</td>
+<td>
+<span class="listing-date">Jan 27, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="23" data-listing-date-sort="1769385600000" data-listing-file-modified-sort="1777489711584" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="265" data-listing-title-sort="Air quality warning ended for Prince George" data-listing-filename-sort="2026-01-26_Prince_George_end_pm25.md">
+<td>
+<span class="listing-location">Prince George</span>
+</td>
+<td>
+<a href="./warnings/2026-01-26_Prince_George_end_pm25.html" class="title listing-title">Air quality warning ended for Prince George</a>
+</td>
+<td>
+<span class="listing-ice">End</span>
+</td>
+<td>
+<span class="listing-date">Jan 26, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="24" data-listing-date-sort="1769385600000" data-listing-file-modified-sort="1777489711584" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="263" data-listing-title-sort="Air quality warning ended for Valemount" data-listing-filename-sort="2026-01-26_Valemount_end_pm25.md">
+<td>
+<span class="listing-location">Valemount</span>
+</td>
+<td>
+<a href="./warnings/2026-01-26_Valemount_end_pm25.html" class="title listing-title">Air quality warning ended for Valemount</a>
+</td>
+<td>
+<span class="listing-ice">End</span>
+</td>
+<td>
+<span class="listing-date">Jan 26, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="25" data-listing-date-sort="1769385600000" data-listing-file-modified-sort="1777489711584" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1101" data-listing-title-sort="Air quality warning in effect for Vanderhoof" data-listing-filename-sort="2026-01-26_Vanderhoof_issue_pm25.md">
+<td>
+<span class="listing-location">Vanderhoof</span>
+</td>
+<td>
+<a href="./warnings/2026-01-26_Vanderhoof_issue_pm25.html" class="title listing-title">Air quality warning in effect for Vanderhoof</a>
+</td>
+<td>
+<span class="listing-ice">Issue</span>
+</td>
+<td>
+<span class="listing-date">Jan 26, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="26" data-listing-date-sort="1769299200000" data-listing-file-modified-sort="1777489711584" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1198" data-listing-title-sort="Air quality warning in effect for Prince George" data-listing-filename-sort="2026-01-25_Prince_George_continue_pm25.md">
+<td>
+<span class="listing-location">Prince George</span>
+</td>
+<td>
+<a href="./warnings/2026-01-25_Prince_George_continue_pm25.html" class="title listing-title">Air quality warning in effect for Prince George</a>
+</td>
+<td>
+<span class="listing-ice">Continue</span>
+</td>
+<td>
+<span class="listing-date">Jan 25, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="27" data-listing-date-sort="1769299200000" data-listing-file-modified-sort="1777489711584" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1248" data-listing-title-sort="Air quality warning in effect for Valemount" data-listing-filename-sort="2026-01-25_Valemount_continue_pm25.md">
+<td>
+<span class="listing-location">Valemount</span>
+</td>
+<td>
+<a href="./warnings/2026-01-25_Valemount_continue_pm25.html" class="title listing-title">Air quality warning in effect for Valemount</a>
+</td>
+<td>
+<span class="listing-ice">Continue</span>
+</td>
+<td>
+<span class="listing-date">Jan 25, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="28" data-listing-date-sort="1769299200000" data-listing-file-modified-sort="1777489711584" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="280" data-listing-title-sort="Air quality warning ended for Vanderhoof" data-listing-filename-sort="2026-01-25_Vanderhoof_end_pm25.md">
+<td>
+<span class="listing-location">Vanderhoof</span>
+</td>
+<td>
+<a href="./warnings/2026-01-25_Vanderhoof_end_pm25.html" class="title listing-title">Air quality warning ended for Vanderhoof</a>
+</td>
+<td>
+<span class="listing-ice">End</span>
+</td>
+<td>
+<span class="listing-date">Jan 25, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="29" data-listing-date-sort="1769212800000" data-listing-file-modified-sort="1777489711584" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1193" data-listing-title-sort="Air quality warning in effect for Prince George" data-listing-filename-sort="2026-01-24_Prince_George_continue_pm25.md">
+<td>
+<span class="listing-location">Prince George</span>
+</td>
+<td>
+<a href="./warnings/2026-01-24_Prince_George_continue_pm25.html" class="title listing-title">Air quality warning in effect for Prince George</a>
+</td>
+<td>
+<span class="listing-ice">Continue</span>
+</td>
+<td>
+<span class="listing-date">Jan 24, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="30" data-listing-date-sort="1769212800000" data-listing-file-modified-sort="1777489711584" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1244" data-listing-title-sort="Air quality warning in effect for Valemount" data-listing-filename-sort="2026-01-24_Valemount_continue_pm25.md">
+<td>
+<span class="listing-location">Valemount</span>
+</td>
+<td>
+<a href="./warnings/2026-01-24_Valemount_continue_pm25.html" class="title listing-title">Air quality warning in effect for Valemount</a>
+</td>
+<td>
+<span class="listing-ice">Continue</span>
+</td>
+<td>
+<span class="listing-date">Jan 24, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="31" data-listing-date-sort="1769212800000" data-listing-file-modified-sort="1777489711584" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1118" data-listing-title-sort="Air quality warning in effect for Vanderhoof" data-listing-filename-sort="2026-01-24_Vanderhoof_issue_pm25.md">
+<td>
+<span class="listing-location">Vanderhoof</span>
+</td>
+<td>
+<a href="./warnings/2026-01-24_Vanderhoof_issue_pm25.html" class="title listing-title">Air quality warning in effect for Vanderhoof</a>
+</td>
+<td>
+<span class="listing-ice">Issue</span>
+</td>
+<td>
+<span class="listing-date">Jan 24, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="32" data-listing-date-sort="1769126400000" data-listing-file-modified-sort="1777489711584" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1193" data-listing-title-sort="Air quality warning in effect for Prince George" data-listing-filename-sort="2026-01-23_Prince_George_issue_pm25.md">
+<td>
+<span class="listing-location">Prince George</span>
+</td>
+<td>
+<a href="./warnings/2026-01-23_Prince_George_issue_pm25.html" class="title listing-title">Air quality warning in effect for Prince George</a>
+</td>
+<td>
+<span class="listing-ice">Issue</span>
+</td>
+<td>
+<span class="listing-date">Jan 23, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="33" data-listing-date-sort="1769126400000" data-listing-file-modified-sort="1777489711584" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1241" data-listing-title-sort="Air quality warning in effect for Valemount" data-listing-filename-sort="2026-01-23_Valemount_issue_pm25.md">
+<td>
+<span class="listing-location">Valemount</span>
+</td>
+<td>
+<a href="./warnings/2026-01-23_Valemount_issue_pm25.html" class="title listing-title">Air quality warning in effect for Valemount</a>
+</td>
+<td>
+<span class="listing-ice">Issue</span>
+</td>
+<td>
+<span class="listing-date">Jan 23, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="34" data-listing-date-sort="1769040000000" data-listing-file-modified-sort="1777489711584" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="254" data-listing-title-sort="Air quality warning ended for Smithers" data-listing-filename-sort="2026-01-22_Smithers_end_pm10.md">
+<td>
+<span class="listing-location">Smithers</span>
+</td>
+<td>
+<a href="./warnings/2026-01-22_Smithers_end_pm10.html" class="title listing-title">Air quality warning ended for Smithers</a>
+</td>
+<td>
+<span class="listing-ice">End</span>
+</td>
+<td>
+<span class="listing-date">Jan 22, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="35" data-listing-date-sort="1768953600000" data-listing-file-modified-sort="1777489711584" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="265" data-listing-title-sort="Air quality warning ended for Prince George" data-listing-filename-sort="2026-01-21_Prince_George_end_pm25.md">
+<td>
+<span class="listing-location">Prince George</span>
+</td>
+<td>
+<a href="./warnings/2026-01-21_Prince_George_end_pm25.html" class="title listing-title">Air quality warning ended for Prince George</a>
+</td>
+<td>
+<span class="listing-ice">End</span>
+</td>
+<td>
+<span class="listing-date">Jan 21, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="36" data-listing-date-sort="1768953600000" data-listing-file-modified-sort="1777489711584" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1235" data-listing-title-sort="Air quality warning in effect for Smithers" data-listing-filename-sort="2026-01-21_Smithers_continue_pm10.md">
+<td>
+<span class="listing-location">Smithers</span>
+</td>
+<td>
+<a href="./warnings/2026-01-21_Smithers_continue_pm10.html" class="title listing-title">Air quality warning in effect for Smithers</a>
+</td>
+<td>
+<span class="listing-ice">Continue</span>
+</td>
+<td>
+<span class="listing-date">Jan 21, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="37" data-listing-date-sort="1768867200000" data-listing-file-modified-sort="1777489711583" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1203" data-listing-title-sort="Air quality warning in effect for Prince George" data-listing-filename-sort="2026-01-20_Prince_George_continue_pm25.md">
+<td>
+<span class="listing-location">Prince George</span>
+</td>
+<td>
+<a href="./warnings/2026-01-20_Prince_George_continue_pm25.html" class="title listing-title">Air quality warning in effect for Prince George</a>
+</td>
+<td>
+<span class="listing-ice">Continue</span>
+</td>
+<td>
+<span class="listing-date">Jan 20, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="38" data-listing-date-sort="1768867200000" data-listing-file-modified-sort="1777489711583" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="260" data-listing-title-sort="Air quality warning ended for Quesnel" data-listing-filename-sort="2026-01-20_Quesnel_end_pm25.md">
+<td>
+<span class="listing-location">Quesnel</span>
+</td>
+<td>
+<a href="./warnings/2026-01-20_Quesnel_end_pm25.html" class="title listing-title">Air quality warning ended for Quesnel</a>
+</td>
+<td>
+<span class="listing-ice">End</span>
+</td>
+<td>
+<span class="listing-date">Jan 20, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="39" data-listing-date-sort="1768867200000" data-listing-file-modified-sort="1777489711584" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1228" data-listing-title-sort="Air quality warning in effect for Smithers" data-listing-filename-sort="2026-01-20_Smithers_issue_pm10.md">
+<td>
+<span class="listing-location">Smithers</span>
+</td>
+<td>
+<a href="./warnings/2026-01-20_Smithers_issue_pm10.html" class="title listing-title">Air quality warning in effect for Smithers</a>
+</td>
+<td>
+<span class="listing-ice">Issue</span>
+</td>
+<td>
+<span class="listing-date">Jan 20, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="40" data-listing-date-sort="1768867200000" data-listing-file-modified-sort="1777489711584" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="275" data-listing-title-sort="Air quality warning ended for Vanderhoof" data-listing-filename-sort="2026-01-20_Vanderhoof_end_pm25.md">
+<td>
+<span class="listing-location">Vanderhoof</span>
+</td>
+<td>
+<a href="./warnings/2026-01-20_Vanderhoof_end_pm25.html" class="title listing-title">Air quality warning ended for Vanderhoof</a>
+</td>
+<td>
+<span class="listing-ice">End</span>
+</td>
+<td>
+<span class="listing-date">Jan 20, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="41" data-listing-date-sort="1768780800000" data-listing-file-modified-sort="1777489711583" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1180" data-listing-title-sort="Air quality warning in effect for Prince George" data-listing-filename-sort="2026-01-19_Prince_George_continue_pm25.md">
+<td>
+<span class="listing-location">Prince George</span>
+</td>
+<td>
+<a href="./warnings/2026-01-19_Prince_George_continue_pm25.html" class="title listing-title">Air quality warning in effect for Prince George</a>
+</td>
+<td>
+<span class="listing-ice">Continue</span>
+</td>
+<td>
+<span class="listing-date">Jan 19, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="42" data-listing-date-sort="1768780800000" data-listing-file-modified-sort="1777489711583" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1105" data-listing-title-sort="Air quality warning in effect for Quesnel" data-listing-filename-sort="2026-01-19_Quesnel_issue_pm25.md">
+<td>
+<span class="listing-location">Quesnel</span>
+</td>
+<td>
+<a href="./warnings/2026-01-19_Quesnel_issue_pm25.html" class="title listing-title">Air quality warning in effect for Quesnel</a>
+</td>
+<td>
+<span class="listing-ice">Issue</span>
+</td>
+<td>
+<span class="listing-date">Jan 19, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="43" data-listing-date-sort="1768780800000" data-listing-file-modified-sort="1777489711583" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1102" data-listing-title-sort="Air quality warning in effect for Vanderhoof" data-listing-filename-sort="2026-01-19_Vanderhoof_continue_pm25.md">
+<td>
+<span class="listing-location">Vanderhoof</span>
+</td>
+<td>
+<a href="./warnings/2026-01-19_Vanderhoof_continue_pm25.html" class="title listing-title">Air quality warning in effect for Vanderhoof</a>
+</td>
+<td>
+<span class="listing-ice">Continue</span>
+</td>
+<td>
+<span class="listing-date">Jan 19, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="44" data-listing-date-sort="1768694400000" data-listing-file-modified-sort="1777489711583" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1165" data-listing-title-sort="Air quality warning in effect for Prince George" data-listing-filename-sort="2026-01-18_Prince_George_issue_pm25.md">
+<td>
+<span class="listing-location">Prince George</span>
+</td>
+<td>
+<a href="./warnings/2026-01-18_Prince_George_issue_pm25.html" class="title listing-title">Air quality warning in effect for Prince George</a>
+</td>
+<td>
+<span class="listing-ice">Issue</span>
+</td>
+<td>
+<span class="listing-date">Jan 18, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="45" data-listing-date-sort="1768694400000" data-listing-file-modified-sort="1777489711583" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1118" data-listing-title-sort="Air quality warning in effect for Vanderhoof" data-listing-filename-sort="2026-01-18_Vanderhoof_continue_pm25.md">
+<td>
+<span class="listing-location">Vanderhoof</span>
+</td>
+<td>
+<a href="./warnings/2026-01-18_Vanderhoof_continue_pm25.html" class="title listing-title">Air quality warning in effect for Vanderhoof</a>
+</td>
+<td>
+<span class="listing-ice">Continue</span>
+</td>
+<td>
+<span class="listing-date">Jan 18, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="46" data-listing-date-sort="1768608000000" data-listing-file-modified-sort="1777489711583" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="261" data-listing-title-sort="Air quality warning ended for Valemount" data-listing-filename-sort="2026-01-17_Valemount_end_pm25.md">
+<td>
+<span class="listing-location">Valemount</span>
+</td>
+<td>
+<a href="./warnings/2026-01-17_Valemount_end_pm25.html" class="title listing-title">Air quality warning ended for Valemount</a>
+</td>
+<td>
+<span class="listing-ice">End</span>
+</td>
+<td>
+<span class="listing-date">Jan 17, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="47" data-listing-date-sort="1768608000000" data-listing-file-modified-sort="1777489711583" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1116" data-listing-title-sort="Air quality warning in effect for Vanderhoof" data-listing-filename-sort="2026-01-17_Vanderhoof_continue_pm25.md">
+<td>
+<span class="listing-location">Vanderhoof</span>
+</td>
+<td>
+<a href="./warnings/2026-01-17_Vanderhoof_continue_pm25.html" class="title listing-title">Air quality warning in effect for Vanderhoof</a>
+</td>
+<td>
+<span class="listing-ice">Continue</span>
+</td>
+<td>
+<span class="listing-date">Jan 17, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="48" data-listing-date-sort="1768521600000" data-listing-file-modified-sort="1777489711583" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1197" data-listing-title-sort="Air quality warning in effect for Valemount" data-listing-filename-sort="2026-01-16_Valemount_issue_pm25.md">
+<td>
+<span class="listing-location">Valemount</span>
+</td>
+<td>
+<a href="./warnings/2026-01-16_Valemount_issue_pm25.html" class="title listing-title">Air quality warning in effect for Valemount</a>
+</td>
+<td>
+<span class="listing-ice">Issue</span>
+</td>
+<td>
+<span class="listing-date">Jan 16, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="49" data-listing-date-sort="1768521600000" data-listing-file-modified-sort="1777489711583" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1081" data-listing-title-sort="Air quality warning in effect for Vanderhoof" data-listing-filename-sort="2026-01-16_Vanderhoof_issue_pm25.md">
+<td>
+<span class="listing-location">Vanderhoof</span>
+</td>
+<td>
+<a href="./warnings/2026-01-16_Vanderhoof_issue_pm25.html" class="title listing-title">Air quality warning in effect for Vanderhoof</a>
+</td>
+<td>
+<span class="listing-ice">Issue</span>
+</td>
+<td>
+<span class="listing-date">Jan 16, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="50" data-listing-date-sort="1749081600000" data-listing-title-sort="Air Quality Warning - Wildfire Smoke">
+<td>
+<span class="listing-location">Northeast B.C.</span>
+</td>
+<td>
+<a href="warnings/2025-06-05_wildfire_smoke_issue.html" class="title listing-title">Air Quality Warning - Wildfire Smoke</a>
+</td>
+<td>
+<span class="listing-ice">Issue</span>
+</td>
+<td>
+<span class="listing-date">Jun 5, 2025</span>
+</td>
+
+</tr>
+
+<tr data-index="51" data-listing-date-sort="1748995200000" data-listing-title-sort="Air Quality Warning - Wildfire Smoke">
+<td>
+<span class="listing-location">Northeast B.C.</span>
+</td>
+<td>
+<a href="warnings/2025-06-04_wildfire_smoke_issue.html" class="title listing-title">Air Quality Warning - Wildfire Smoke</a>
+</td>
+<td>
+<span class="listing-ice">Issue</span>
+</td>
+<td>
+<span class="listing-date">Jun 4, 2025</span>
+</td>
+
+</tr>
+
+<tr data-index="52" data-listing-date-sort="1748908800000" data-listing-title-sort="Air Quality Warning - Wildfire Smoke">
 <td>
 <span class="listing-location">Northeast B.C.</span>
 </td>
@@ -295,7 +1122,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="1" data-listing-date-sort="1748822400000" data-listing-title-sort="Air Quality Warning - Wildfire Smoke">
+<tr data-index="53" data-listing-date-sort="1748822400000" data-listing-title-sort="Air Quality Warning - Wildfire Smoke">
 <td>
 <span class="listing-location">Northeast B.C.</span>
 </td>
@@ -314,6 +1141,9 @@ window.Quarto = {
 </tbody>
 </table>
 <div class="listing-no-matching d-none">No matching items</div>
+<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
